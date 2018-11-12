@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from './componentes/Header';
+import Formulario from './componentes/Formulario';
 
 
 class App extends Component {
@@ -31,6 +32,11 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
+        <div className="uk-container">
+          <Formulario 
+            categorias={this.state.categorias}
+          />
+        </div>
       </div>
     );
   }
